@@ -6,6 +6,6 @@
      2. 計算黛玉、寶玉的出現次數、笑的次數。
      3. 內建紅樓夢120回txt檔案。
 
->   有關regex的部分並沒有考慮太多，算是初版，還有很多需要加強的地方。
->   RBD? RBD就是red building dream (傻眼
+>   有關regex的部分並沒有考慮太多，算是初版，還有很多需要加強的地方。<br>
+>   RBD? RBD就是red building dream (傻眼<br>
 >   Arp. 17, 2018.
