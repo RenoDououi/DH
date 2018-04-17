@@ -119,5 +119,5 @@ for n in range(head,tail+1,1):
 
 #總共出現多少次
 print("從第",head,"回到第",tail,"回中，",sep='')
-print("黛玉總共出現",dysum,"次，笑了",dysct,"次，ㄏㄏ。")
-print("寶玉總共出現",bysum,"次，笑了",bysct,"次，到底是有多好笑？")
+print("黛玉總共出現",dysum,"次，笑了",dysct,"次。")
+print("寶玉總共出現",bysum,"次，笑了",bysct,"次。")
