@@ -53,9 +53,9 @@ text = []
 head = 1
 tail = 120
 print("歡迎來到：「黛玉寶玉呵呵笑計數器：」""請問您想要從哪一回開始查呢？：")
-head = eval(input())
+#-----# head = eval(input())
 print("想要查到哪一回？：")
-tail = eval(input())
+#-----# tail = eval(input())
 #每回出現次數 dy黛玉 by寶玉
 dy = 0
 by = 0
@@ -107,20 +107,20 @@ for n in range(head,tail+1,1):
         #笑的同義詞：http://www.hkdictionary.net/synonym/result2.asp?Sense=%AF%BA
         #除了：忍俊不禁/前仰後合/哂/哄堂/捧腹/哧哧/發噱/絕倒/開顏/粲/嫣然/噴飯/噱/樂/囅然
        
-        dys = re.findall('黛玉+笑',text) #這行還要再改
+        dys = re.findall('黛玉笑+',text) #這行還要再改
         dys = "".join(dys)
         dysc = dys.count('黛玉笑')
         dysct = dysct + dysc
         #print(dys,sep='',end='') #測試用
-        bys = re.findall('寶玉+笑',text) #這行還要再改
+        bys = re.findall('寶玉笑+',text) #這行還要再改
         bys = "".join(bys)
         bysc = bys.count('寶玉笑')
         bysct = bysct + bysc
 
         #每一回中出現幾次
-        print("在第",chpt,"回中，「黛玉」出現了",dy,"次，笑了",dysc,"次。寶玉出現了",by,"次，笑了",bysc,"次。",sep="")
+        #-----# print("在第",chpt,"回中，「黛玉」出現了",dy,"次，笑了",dysc,"次。寶玉出現了",by,"次，笑了",bysc,"次。",sep="")
 
 #總共出現多少次
-print("從第",head,"回到第",tail,"回中，",sep='')
+#-----# print("從第",head,"回到第",tail,"回中，",sep='')
 print("黛玉總共出現",dysum,"次，笑了",dysct,"次。")
 print("寶玉總共出現",bysum,"次，笑了",bysct,"次。")
