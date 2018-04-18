@@ -103,13 +103,16 @@ for n in range(head,tail+1,1):
         by = text.count("寶玉")
         bysum = bysum + by    
         
-        #以下是笑 dys=>黛玉笑(文字), dysc=>黛玉笑count, dysct=dysc total
-        dys = re.findall('黛玉+笑',text)
+        #以下是笑 dys=>黛玉笑(文字), dysc=>黛玉笑count, dysct=dysc 
+        #笑的同義詞：http://www.hkdictionary.net/synonym/result2.asp?Sense=%AF%BA
+        #除了：忍俊不禁/前仰後合/哂/哄堂/捧腹/哧哧/發噱/絕倒/開顏/粲/嫣然/噴飯/噱/樂/囅然
+       
+        dys = re.findall('黛玉+笑',text) #這行還要再改
         dys = "".join(dys)
         dysc = dys.count('黛玉笑')
         dysct = dysct + dysc
         #print(dys,sep='',end='') #測試用
-        bys = re.findall('寶玉+笑',text)
+        bys = re.findall('寶玉+笑',text) #這行還要再改
         bys = "".join(bys)
         bysc = bys.count('寶玉笑')
         bysct = bysct + bysc
